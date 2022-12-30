@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "node -r dotenv index.js"
+  },
+  "dependencies": {
+    "@google-cloud/tasks": "^3.0.5",
+    "dotenv": "^16.0.3"
+  },
+  "packageManager": "yarn@3.3.0"
+}

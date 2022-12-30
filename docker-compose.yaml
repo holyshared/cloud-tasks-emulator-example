@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  tasks:
+    image: ghcr.io/aertje/cloud-tasks-emulator:latest
+    command: -host 0.0.0.0 -port 8123 -queue "projects/example/locations/asia-northeast1/queues/example"
+    ports:
+      - 8123:8123
+    extra_hosts:
+      - "local_tasks:192.168.0.17"
